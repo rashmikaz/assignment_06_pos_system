@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pos system</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/dashboard.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">Pos System</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-home"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-regular fa-user pe-2"></i>
+                            Customer
+                        </a>
+
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            Item
+                        </a>
+
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-cart-full"></i>
+                            Order
+                        </a>
+
+                    </li>
+                    <li class="sidebar-header">
+
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-exit"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div>
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="image/profile.jpg" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#" class="dropdown-item">Setting</a>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h4>Dashboard</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="card flex-fill border-0 illustration">
+                                <div class="card-body p-0 d-flex flex-fill">
+                                    <div class="row g-0 w-100">
+                                        <div class="col-6">
+                                            <div class="p-3 m-1">
+                                                <h4>Welcome Back,</h4>
+                                                <p class="mb-0">Dashboard, Pos syatem</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 align-self-end text-end">
+                                            <img src="image/customer-support.jpg" class="img-fluid illustration-img"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                        <div class="col-12 col-md-6 d-flex">-->
+<!--                            <div class="card flex-fill border-0">-->
+<!--                                <div class="card-body py-4">-->
+<!--                                    <div class="d-flex align-items-start">-->
+<!--                                        <div class="flex-grow-1">-->
+<!--                                            <h4 class="mb-2">-->
+<!--                                                $ 78.00-->
+<!--                                            </h4>-->
+<!--                                            <p class="mb-2">-->
+<!--                                                Total Earnings-->
+<!--                                            </p>-->
+<!--                                            <div class="mb-0">-->
+<!--                                                <span class="badge text-success me-2">-->
+<!--                                                    +9.0%-->
+<!--                                                </span>-->
+<!--                                                <span class="text-muted">-->
+<!--                                                    Since Last Month-->
+<!--                                                </span>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                    <div>
+
+                        <div id="card1">
+                            <h3 class="card-h3">Customers</h3>
+                            <div id="card-image1">
+                                <img src="assets/images/icons8-customers-50%20(1).png" alt="">
+                            </div>
+                            <h3 class="card-number">24</h3>
+                        </div>
+                        <div id="card2">
+                            <h3 class="card-h3">Items</h3>
+                            <div id="card-image2">
+                                <img src="assets/images/icons8-grocery-bag-30.png" alt="">
+                            </div>
+                            <h3 class="card-number">24</h3>
+                        </div>
+                        <div id="card3">
+                            <h3 class="card-h3">Orders</h3>
+                            <div id="card-image3">
+                                <img src="assets/images/icons8-minimum-order-64.png" alt="">
+                            </div>
+                            <h3 class="card-number">24</h3>
+                        </div>
+                    </div>
+                    <!-- Table Element -->
+                    <div class="card border-0">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                Customer Table
+                            </h5>
+                            <h6 class="card-subtitle text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus,
+                                necessitatibus reprehenderit itaque!
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Customer Id</th>
+                                        <th scope="col">Sales</th>
+                                        <th scope="col">Values</th>
+                                        <th scope="col">Discount Given</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">C001</th>
+                                    <td>50</td>
+                                    <td>54000</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C002</th>
+                                    <td>42</td>
+                                    <td>43000</td>
+                                    <td>15%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C003</th>
+                                    <td>25</td>
+                                    <td>23000</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C004</th>
+                                    <td>50</td>
+                                    <td>54000</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C005</th>
+                                    <td>50</td>
+                                    <td>54000</td>
+                                    <td>10%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">C006</th>
+                                    <td>50</td>
+                                    <td>54000</td>
+                                    <td>10%</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <a href="#" class="theme-toggle">
+            </a>
+            <footer>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
