@@ -1,0 +1,71 @@
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#login-section>div>h2{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#login-section>div>h5{
+    font-size: medium;
+    color: gray;
+}
+
+#login-section>form{
+    margin-top: 40px;
+}
+
+section>img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 1100px;
+    height: 900px;
+    margin: 30px 0 0 40px;
+    border-radius: 10px;
+}
+
+#login-section{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 200px 220px 0 0;
+}
+
+.form-control{
+    width: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input,input::-webkit-input-placeholder{
+    font-size: 15px;
+    color: gray;
+}
+
+.form-control:focus{
+    border-color: #008DDA;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    outline: 0 none;
+}
+
+.btn{
+    background-color: #9F70FD;
+    border: #9F70FD;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: #9F70FD;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: #9F70FD;;
+}
