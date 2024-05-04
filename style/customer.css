@@ -121,11 +121,15 @@ a.sidebar-link {
 /*    right: 20px;*/
 /*}*/
 
-#table{
+#customertable{
     position: absolute;
     height: 400px;
     width: 700px;
 
-    top: 75px;
-    left: 700px;
+    top: 325px;
+    left:290px;
+}
+#customerform{
+    position:absolute ;
+    top: 50px;
 }
