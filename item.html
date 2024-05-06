@@ -10,307 +10,180 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/item.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style/normalize.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <aside id="sidebar" class="js-sidebar">
-            <!-- Content For Sidebar -->
-            <div class="h-100">
-                <div class="sidebar-logo">
-                    <a href="#">Pos System</a>
-                </div>
-                <ul class="sidebar-nav">
-                    <li class="sidebar-header">
+<main>
+    <section>
+        <div id="mainname">
+            <h1>item</h1>
 
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="lni lni-home"></i>
-                            Dashboard
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-regular fa-user pe-2"></i>
-                            Customer
-                        </a>
+        </div>
 
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-sliders pe-2"></i>
-                            Item
-                        </a>
-
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="lni lni-cart-full"></i>
-                            Order
-                        </a>
-
-                    </li>
-                    <li class="sidebar-header">
-
-                    </li>
-
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="lni lni-exit"></i>
-                            Logout
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
         <div>
-<!--            <nav class="navbar navbar-expand px-3 border-bottom">-->
-<!--                <button class="btn" id="sidebar-toggle" type="button">-->
-<!--                    <span class="navbar-toggler-icon"></span>-->
-<!--                </button>-->
-<!--                <div class="navbar-collapse navbar">-->
-<!--                    <ul class="navbar-nav">-->
-<!--                        <li class="nav-item dropdown">-->
-<!--                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">-->
-<!--&lt;!&ndash;                                <img src="image/profile.jpg" class="avatar img-fluid rounded" alt="" id="sideimage1">&ndash;&gt;-->
-<!--                            </a>-->
-<!--                            <div class="dropdown-menu dropdown-menu-end">-->
-<!--                                <a href="#" class="dropdown-item">Profile</a>-->
-<!--                                <a href="#" class="dropdown-item">Setting</a>-->
-<!--                                <a href="#" class="dropdown-item">Logout</a>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </nav>-->
-            <main class="content px-3 py-2">
-                <div class="container-fluid">
-                    <div class="mb-3">
-                        <h4>Item</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
+            <h2>Dashboard</h2>
 
+            <div id="nav-bar">
+                <h3 id="posname">Pos System</h3>
+                <hr>
+                <div class="nav-links">
+                    <i class="fa-solid fa-chart-line fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="nav-links">
+                    <i class="fa-solid fa-people-roof fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="customer.html">Manage Customer</a>
+                </div>
+                <div class="nav-links">
+                    <i class="fa-solid fa-bag-shopping fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="item.html">Manage Item</a>
+                </div>
+                <div class="nav-links">
+                    <i class="fa-solid fa-cart-shopping fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="place-order.html">Place Order</a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="nav-links">
+                    <i class="fa-solid fa-right-from-bracket fa-lg dash-icon" style="color: #161718;"></i>
+                    <a href="index.html">Sign Out</a>
+                </div>
+                <a href="">
+                    <i class="bi bi-list"></i>
+                </a>
+            </div>
+        </div>
+        <div id="add">
+            <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter Item Code">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-magnifying-glass-plus fa-lg" style="color: #ffffff;"></i>
+                    Search
+                </button>
+
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel2">Item Form</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control first-name"  placeholder="Item Code" aria-label="First name">
                                         </div>
-
+                                        <div class="col">
+                                            <input type="text" class="form-control last-name"  placeholder="Item Name" aria-label="Last name">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputAddress" id="inputAddress2" placeholder="QtyOnHand">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputTel" id="inputTel2" placeholder="UnitPrice">
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="btn-edit">Edit</button>
                             </div>
                         </div>
-
-                    </div>
-
-
-
-                </div>
-                <br>
-                <br>
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputcode" class="form-label">Item code</label>
-                        <input type="email" class="form-control" id="exampleInputcode" aria-describedby="emailHelp">
-
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="mb-3">
-                        <label for="exampleInputname" class="form-label">Item Name</label>
-                        <input type="email" class="form-control" id="exampleInputname" aria-describedby="emailHelp">
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="mb-3">
-                        <label for="exampleInputitemprice" class="form-label">Item Price</label>
-                        <input type="email" class="form-control" id="exampleInputitemprice" aria-describedby="emailHelp">
-
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="mb-3">
-                        <label for="exampleInputitemqty" class="form-label">Item Qty</label>
-                        <input type="email" class="form-control" id="exampleInputitemqty" aria-describedby="emailHelp">
-
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-
-                    <br>
-                    <br>
-
-                    <button type="submit" class="btn btn-primary">save</button>
-                    <button type="submit" class="btn btn-primary">delete</button>
-                    <button type="submit" class="btn btn-primary">search</button>
-                    <button type="submit" class="btn btn-primary">update</button>
-                </form>
-
-
-                <!-- Table Element -->
-                <div id="table">
-                    <div class="card-header">
-                        <h5 class="card-title">
-                            Customer Table
-                        </h5>
-                        <h6 class="card-subtitle text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus,
-                            necessitatibus reprehenderit itaque!
-                        </h6>
-                    </div>
-                    <div class="card-body">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">Customer Id</th>
-                                <th scope="col">Sales</th>
-                                <th scope="col">Values</th>
-                                <th scope="col">Discount Given</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">C001</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C002</th>
-                                <td>42</td>
-                                <td>43000</td>
-                                <td>15%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C003</th>
-                                <td>25</td>
-                                <td>23000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C004</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C005</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C006</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C001</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C002</th>
-                                <td>42</td>
-                                <td>43000</td>
-                                <td>15%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C003</th>
-                                <td>25</td>
-                                <td>23000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C004</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C005</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C006</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C006</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C001</th>
-                                <td>50</td>
-                                <td>54000</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C002</th>
-                                <td>42</td>
-                                <td>43000</td>
-                                <td>15%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C003</th>
-                                <td>25</td>
-                                <td>23000</td>
-                                <td>10%</td>
-                            </tr>
-
-                            </tbody>
-                        </table>
                     </div>
                 </div>
-            </main>
+                <button type="button" class="btn btn-success btn-lg" id="add-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-circle-plus fa-lg" style="color: #ffffff;"></i>
+                    Add
+                </button>
 
-            <a href="#" class="theme-toggle">
-            </a>
-            <footer>
-
-            </footer>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Item Form</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control first-name"  placeholder="Item Code" aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control last-name"  placeholder="Item Name" aria-label="Last name">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputAddress" id="inputAddress" placeholder="QtyOnHand">
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" class="form-control inputTel" id="inputTel" placeholder="UnitPrice">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="btn-save">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div id="table-div">
+            <h4>Item Table</h4>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">QtyOnHand</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>Buiscuites</td>
+                    <td>250</td>
+                    <td>Rs.200</td>
+                </tr>
+                <tr>
+                    <th scope="row">I002</th>
+                    <td>Chocolate</td>
+                    <td>300</td>
+                    <td>Rs.150</td>
+                </tr>
+                <tr>
+                    <th scope="row">I003</th>
+                    <td>Sunlight</td>
+                    <td>200</td>
+                    <td>Rs.120</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
