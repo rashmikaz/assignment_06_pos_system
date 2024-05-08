@@ -13,188 +13,141 @@
     <link rel="stylesheet" href="style/normalize.css">
 </head>
 <body>
+<header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../home_form/home_form.html">
+
+                <b>Pos System</b>
+            </a>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <button id="logOutButton" type="button" class="btn btn-danger">Log Out</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
 <main>
-    <section>
-        <div id="mainname">
-            <h1>Customer</h1>
-
-        </div>
+    <h1>Customer</h1>
 
 
-
-            <div id="nav-bar">
-                <h3 id="posname">Pos System</h3>
-                <hr>
-                <div class="nav-links">
-                    <i class="fa-solid fa-chart-line fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="dashboard.html">Dashboard</a>
-                </div>
-                <div class="nav-links">
-                    <i class="fa-solid fa-people-roof fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="customer.html">Manage Customer</a>
-                </div>
-                <div class="nav-links">
-                    <i class="fa-solid fa-bag-shopping fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="item.html">Manage Item</a>
-                </div>
-                <div class="nav-links">
-                    <i class="fa-solid fa-cart-shopping fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="place-order.html">Place Order</a>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="nav-links">
-                    <i class="fa-solid fa-right-from-bracket fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="index.html">Sign Out</a>
-                </div>
-                <a href="">
-                    <i class="bi bi-list"></i>
-                </a>
+    <div id="customerSearch">
+        <form class="row g-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search Customer" aria-label="search" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
             </div>
-        </div>
-        <div id="add">
-            <div class="mb-3">
-                <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter Customer ID">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                    <i class="fa-solid fa-magnifying-glass-plus fa-lg" style="color: #ffffff;"></i>
-                    Search
-                </button>
 
-                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel2">Customer Form</h1>
-                            </div>
-                            <div class="modal-body">
-                                <form class="row g-3">
-                                    <div class="row g-3">
-                                        <div class="col">
-                                            <input type="text" class="form-control id"  placeholder="Cus ID" aria-label="First name">
-                                        </div>
-                                        <div class="col">
-                                            <input type="text" class="form-control first-name"  placeholder="First name" aria-label="First name">
-                                        </div>
-                                        <div class="col">
-                                            <input type="text" class="form-control last-name" placeholder="Last name" aria-label="Last name">
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="text" class="form-control inputAddress" id="inputAddress2" placeholder="1234 Main St">
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="tel" class="form-control inputTel" id="inputTel2" placeholder="07xxxxxxx">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" id="btn-edit">Edit</button>
-                            </div>
+            <div class="col-md-6">
+                <label for="custID" class="form-label">ID:</label>
+                <input type="text" class="form-control" id="custID">
+            </div>
+            <div class="col-md-6">
+                <label for="custName" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="custName">
+            </div>
+            <div class="col-md-6">
+                <label for="custAddress" class="form-label">Address:</label>
+                <input type="text" class="form-control" id="custAddress">
+            </div>
+
+            <div class="col-12">
+                <button id="updateButton" type="button" class="btn btn-warning">Update</button>
+                <button id="unregisterButton" type="button" class="btn btn-danger">Unregister</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="newCust">
+
+        <!-- Button trigger modal -->
+        <button id="registerButton" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Register
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Customer Register</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="Id" class="form-label">ID:</label>
+                            <input type="text" class="form-control" id="Id" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="Name" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Address" class="form-label">Address:</label>
+                            <input type="text" class="form-control" id="Address" placeholder="">
                         </div>
                     </div>
-                </div>
-                <button type="button" class="btn btn-success btn-lg" id="add-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fa-solid fa-circle-plus fa-lg" style="color: #ffffff;"></i>
-                    Add
-                </button>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Customer Form</h1>
-                            </div>
-                            <div class="modal-body">
-                                <form class="row g-3">
-                                    <div class="row g-3">
-                                        <div class="col">
-                                            <input type="text" class="form-control id"  placeholder="Cus ID" aria-label="First name">
-                                        </div>
-                                        <div class="col">
-                                            <input type="text" class="form-control first-name"  placeholder="First name" aria-label="First name">
-                                        </div>
-                                        <div class="col">
-                                            <input type="text" class="form-control last-name"  placeholder="Last name" aria-label="Last name">
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="text" class="form-control inputAddress" id="inputAddress" placeholder="1234 Main St">
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="tel" class="form-control inputTel" id="inputTel" placeholder="07xxxxxxx">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" id="btn-save">Save</button>
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-primary">Renew</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div id="custTable">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+            </tr>
 
-        <div id="table-div">
-            <h4>Customer Table</h4>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">Customer ID</th>
-                    <th scope="col">Customer Name</th>
-                    <th scope="col">Customer Address</th>
-                    <th scope="col">Customer Tel</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">C001</th>
-                    <td>Kamal Perera</td>
-                    <td>Panadura</td>
-                    <td>0718364269</td>
-                </tr>
-                <tr>
-                    <th scope="row">C002</th>
-                    <td>Sampath Wijesuriya</td>
-                    <td>Colombo</td>
-                    <td>0773241543</td>
-                </tr>
-                <tr>
-                    <th scope="row">C003</th>
-                    <td>Deshan Silva</td>
-                    <td>Gampaha</td>
-                    <td>0787693210</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+            </tbody>
+        </table>
+    </div>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="js/script.js"></script>
-<script src="js/pos.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

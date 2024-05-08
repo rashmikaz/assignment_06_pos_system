@@ -12,143 +12,107 @@
     <link rel="stylesheet" href="style/dashboard.css">
     <link rel="stylesheet" href="style/normalize.css">
 </head>
-
 <body>
 
-<main>
-    <section>
+<header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <!--                <img id="logo" src="../assets/images/Logo.jpeg" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">-->
+                <b>Pos System</b>
+            </a>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <button id="logOutButton" type="button" class="btn btn-danger">Log Out</button>
+                    </a>
+                </li>
 
-
-
-        <div id="mainname">
-            <h1>Customer</h1>
-            <h2 id="welcome">Welcome <br> back,</h2>
-            <img src="image/customer-support.jpg" width="200px">
+            </ul>
         </div>
+    </nav>
+</header>
 
-        <div>
-            <h2>Dashboard</h2>
-            <div id="cards">
-                <div id="card1">
-                    <h3 class="card-h3">Customers</h3>
+<section>
+    <h1>Dashboard</h1>
 
-                    <h3 class="card-number">24</h3>
-                </div>
-                <div id="card2">
-                    <h3 class="card-h3">Items</h3>
+    <h2>Welcome <br> back,</h2>
 
-                    <h3 class="card-number">24</h3>
-                </div>
-                <div id="card3">
-                    <h3 class="card-h3">Orders</h3>
+    <img src="image/customer-support.jpg" height="400" width="400" id="image1"/>
 
-                    <h3 class="card-number">24</h3>
-                </div>
+    <div id="cards">
+        <div id="card1">
+            <h3 class="card-h3">Customers</h3>
+            <div id="card-image1">
+                <img src="assets/images/icons8-customers-50%20(1).png" alt="">
             </div>
-
-            <div id="nav-bar">
-                <h3 id="posname">Pos System</h3>
-                <hr>
-                <div class="nav-links">
-                    <i class="fa-solid fa-chart-line fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="dashboard.html">Dashboard</a>
-                </div>
-                <div class="nav-links">
-                    <i class="fa-solid fa-people-roof fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="customer.html">Manage Customer</a>
-                </div>
-                <div class="nav-links">
-                    <i class="fa-solid fa-bag-shopping fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="item.html">Manage Item</a>
-                </div>
-                <div class="nav-links">
-                    <i class="fa-solid fa-cart-shopping fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="order.html">Place Order</a>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="nav-links">
-                    <i class="fa-solid fa-right-from-bracket fa-lg dash-icon" style="color: #161718;"></i>
-                    <a href="index.html">Sign Out</a>
-                </div>
-                <a href="">
-                    <i class="bi bi-list"></i>
-                </a>
+            <h3 class="card-number">24</h3>
+        </div>
+        <div id="card2">
+            <h3 class="card-h3">Items</h3>
+            <div id="card-image2">
+                <img src="assets/images/icons8-grocery-bag-30.png" alt="">
             </div>
+            <h3 class="card-number">24</h3>
         </div>
-
-        <div id="table-div">
-            <h4>Sales By Customers</h4>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">Customer ID</th>
-                    <th scope="col">Sales</th>
-                    <th scope="col">Value</th>
-                    <th scope="col">Discount Given</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">C001</th>
-                    <td>50</td>
-                    <td>54000</td>
-                    <td>10%</td>
-                </tr>
-                <tr>
-                    <th scope="row">C002</th>
-                    <td>42</td>
-                    <td>43000</td>
-                    <td>15%</td>
-                </tr>
-                <tr>
-                    <th scope="row">C003</th>
-                    <td>25</td>
-                    <td>23000</td>
-                    <td>10%</td>
-                </tr>
-                <tr>
-                    <th scope="row">C003</th>
-                    <td>25</td>
-                    <td>23000</td>
-                    <td>10%</td>
-                </tr>
-                <tr>
-                    <th scope="row">C003</th>
-                    <td>25</td>
-                    <td>23000</td>
-                    <td>10%</td>
-                </tr>
-
-
-                </tbody>
-            </table>
+        <div id="card3">
+            <h3 class="card-h3">Orders</h3>
+            <div id="card-image3">
+                <img src="assets/images/icons8-minimum-order-64.png" alt="">
+            </div>
+            <h3 class="card-number">24</h3>
         </div>
+    </div>
+    <div id="table-div">
+        <h4>Sales By Customers</h4>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Customer ID</th>
+                <th scope="col">Sales</th>
+                <th scope="col">Value</th>
+                <th scope="col">Discount Given</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">C001</th>
+                <td>50</td>
+                <td>54000</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <th scope="row">C002</th>
+                <td>42</td>
+                <td>43000</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <th scope="row">C003</th>
+                <td>25</td>
+                <td>23000</td>
+                <td>10%</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
 
 
-
-    </section>
-
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
-<script src="js/pos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" id="mainimage"></script>
 
 </body>
-
 </html>
