@@ -1,19 +1,61 @@
+#sidebtn{
+    height: fit-content;
+    position: absolute;
 
-header>nav>div{
-    /*background-color: paleturquoise;*/
+}
+body{
+    background: lightgray;
+}
+nav{
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     height: 110px;
 }
-.nav-item>a{
+a>img{
+    border-radius: 50%;
+}
+.BtnManage{
+    width: 350px;
+    height: 60px;
+    background-color: darkblue;
+    border: 2px solid cornflowerblue;
     color: white;
+    margin-bottom: 20px;
+    border-radius: 0 50px 50px 0;
+    position: relative;
+    margin-left: -120px;
 }
-.nav-item{
-    gap: 100px;
-}
+.BtnManage>h3{
+    position: absolute;
+    left: 160px;
+    /*right: 30px;*/
+    top: 10px;
 
-#logOutButton {
-    float: right;
-    background-color: black;
-    color: white;
+}
+#div1{
+    opacity: 1;
+}
+#div2{
+    opacity: 75%;
+}
+#div3{
+    opacity: 50%;
+}
+.BtnManage>h4{
+    position: absolute;
+    left: 32px;
+    /*right: 30px;*/
+    top: 12px;
+
+}
+.BtnManage:hover{
+    width: 400px;
+    transition-duration: 3s;
+    margin-left: 0;
+    background-color: blueviolet;
+    color: lightgrey;
+    opacity: 1;
+
 }
 
 h2{
@@ -24,86 +66,16 @@ h2{
 
 
 }
-
-section>h1{
-    position: relative;
-    left: 10px;
-    top: -20px;
-    font-size: 60px;
-}
-
-
-
-
-
-
-
-
-
-section>h2{
-    position: relative;
-    top: -50px;
-    left: 18px;
-}
-
-#cards{
-    display: flex;
-    justify-content: space-between;
-}
-
-#card1{
-    background-color: white;
-    width: 200px;
-    height: 200px;
+h1{
+    font-size: 250px;
+    font-family: sans-serif;
+    color: gray;
     position: absolute;
-    left: 700px;
-    top: 135px;
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 300px;
+    left: 140px;
+    margin: auto;
+    opacity: 50%;
 }
-
-#card2{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 950px;
-    top: 135px;
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-#card3{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 1200px;
-    top: 135px;
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.card-h3{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 20px;
-
-}
-#image1{
-    position: relative;
-    left: 100px;
-    top: -20px;
-}
-
-#table-div{
-    width: 55%;
-    height: 100px;
-    position: relative;
-    right: -550px;
-    top: -300px;
-}
-body{
-    background-color: white;
+.card-body{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }

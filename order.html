@@ -13,37 +13,41 @@
     <link rel="stylesheet" href="style/normalize.css">
 </head>
 <body>
+
 <header>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../home_form/home_form.html">
+            <a class="navbar-brand" href="#">
 
-                <b>Pos System</b>
+                <b>POS SYSTEM</b>
             </a>
             <ul class="nav nav-underline">
                 <li class="nav-item">
-                    <a class="nav-link" href="dashboard.html">Home</a>
+                    <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Customer</a>
+                    <a class="nav-link" href="customer.html">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="item.html">Item</a>
+                    <a class="nav-link" href="store.html">Store</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="order.html">Orders</a>
+                    <a class="nav-link active" aria-current="page" href="#">Order</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">
-                        <button id="logOutButton" type="button" class="btn btn-danger">Log Out</button>
+                    <a class="" href="index.html">
+                        <button type="button" class="btn btn-danger">Log Out</button>
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
+
 <main>
-    <h1>order</h1>
+    <div id="form-tittle">
+        <h1>Order</h1>
+    </div>
 
 
     <!-------Cust Form------->
@@ -56,12 +60,12 @@
             </div>
             <div class="col-md-6">
                 <label for="Date" class="form-label">Date</label>
-                <input type="text" class="form-control" id="Date">
+                <input type="date" class="form-control" id="Date">
             </div>
             <div class="col-md-6">
                 <label for="CustomerID" class="form-label">Customer ID:</label>
                 <select id="CustomerID" class="form-select">
-                    <option selected>Select</option>
+                    <option selected>select</option>
                     <option>C001</option>
                     <option>C002</option>
                     <option>C003</option>
@@ -80,7 +84,7 @@
     </div>
 
     <!-------Item Form------->
-    <div id="itemForm">
+    <div id="ItemForm">
         <form class="row g-3">
 
             <div class="col-md-6">
@@ -88,7 +92,7 @@
                 <input type="text" class="form-control" id="ItemCode">
             </div>
             <div class="col-md-6">
-                <label for="ItemName" class="form-label">Item Name</label>
+                <label for="ItemName" class="form-label">Item</label>
                 <input type="text" class="form-control" id="ItemName">
             </div>
             <div class="col-md-6">
@@ -105,10 +109,50 @@
             </div>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button id="addButton" class="btn btn-warning" type="button">Add</button>
-                <button id="deleteButton" class="btn btn-warning" type="button">Delete</button>
-                <button id="updateButton" class="btn btn-warning" type="button">Update</button>
+                <button class="btn btn-warning" type="button"> Add Item</button>
             </div>
+        </form>
+    </div>
+
+    <!-------Total Form------->
+    <div id="totalForm"class=" bg-success-subtle border border-primary-subtle rounded-3">
+        <form class="row g-3 ">
+
+            <div class="col-md-6">
+                <div class="row mb-3">
+                    <label for="Total" class="col-sm-2 col-form-label"><b>Total:</b></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-sm" id="Total">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row mb-3">
+                    <label for="SubTotal" class="col-sm-2 col-form-label"><b>Sub<br>Total:</b></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-sm" id="SubTotal">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <label for="Cash" class="form-label col-form-label-sm">Cash:</label>
+                <input type="text" class="form-control form-control-sm" id="Cash">
+            </div>
+            <div class="col-md-6">
+                <label for="Discount" class="form-label col-form-label-sm">Discount(%)</label>
+                <input type="text" class="form-control form-control-sm" id="Discount">
+            </div>
+            <div class="col-md-12">
+                <label for="Balance" class="form-label">Balance</label>
+                <input type="text" class="form-control form-control-sm" id="Balance">
+            </div>
+
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <button  id="purchase-btn" class="btn btn-primary btn-sm" type="button"><b>Purchase</b></button>
+            </div>
+
         </form>
     </div>
 
@@ -118,7 +162,7 @@
             <thead>
             <tr>
                 <th scope="col">Code</th>
-                <th scope="col">Name</th>
+                <th scope="col">Item</th>
                 <th scope="col">Qty</th>
                 <th scope="col">Price (Rs.)</th>
             </tr>
@@ -154,49 +198,10 @@
         </table>
     </div>
 
-    <!--    Purchase-->
-    <div id="purchase">
-        <!-- Button trigger modal -->
-        <button id="purchaseButton" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Purchase
-        </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="Sub Total" class="form-label">Sub Total:</label>
-                            <input type="text" class="form-control" id="Sub Total" placeholder="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Name" class="form-label">Cash:</label>
-                            <input type="text" class="form-control" id="Name" placeholder="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Address" class="form-label">Discount:</label>
-                            <input type="text" class="form-control" id="Address" placeholder="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Balance" class="form-label">Balance:</label>
-                            <input type="text" class="form-control" id="Balance" placeholder="">
-                        </div>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Purchase</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

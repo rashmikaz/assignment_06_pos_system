@@ -1,63 +1,40 @@
 
-header>nav>div{
-    /*background-color: paleturquoise;*/
+nav{
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     height: 110px;
 }
-.nav-item>a{
-    color: white;
-}
-.nav-item{
-    gap: 100px;
-}
-
-#logOutButton {
-    float: right;
-    background-color: black;
-    color: white;
-}
-
-h2{
-    text-decoration-style: dashed;
-    position: absolute;
-    top: 550px;
-    right: 30px;
-
-
-}
-
-section>h1{
-    position: relative;
-    left: 10px;
-    top: -20px;
-    font-size: 60px;
-}
-body{
-    background-color: white;
-}
-
-
 
 
 #customerSearch{
-    width: 50%;
-    position: relative;
-    left: 100px;
-    top: 50px;
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    background: whitesmoke;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #newCust{
-    position: relative;
-    left: 300px;
+    position: absolute;
+    top: 200px;
+    right: 130px;
+    margin: auto;
 }
 #custTable{
-    width: 50%;
-    position: relative;
-    top: 100px;
-    left: 100px;
+    width: 1000px;
+    position: absolute;
+    top: 620px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
-
-
-
-
-
-
-
+#form-tittle{
+    position: absolute;
+    left: 20px;
+    font-family: sans-serif;
+}

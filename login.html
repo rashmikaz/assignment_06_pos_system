@@ -23,37 +23,39 @@
 </head>
 
 <body>
-<main>
-    <!--Left Section-->
 
-    <!--Right Section-->
-    <section id="login-section">
-        <div>
+<section>
+
+    <div id="log-form">
+        <form>
             <h2>Sign In</h2>
-            <h5>Enter Your Username And Password to Sign In</h5>
-        </div>
+            <br>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
 
-        <form role="form">
-            <div class="mb-4">
-                <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Email">
+            <div class="col">
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password">
             </div>
-            <div class="mb-4">
-                <input type="email" class="form-control form-control-lg" placeholder="Password" aria-label="Password">
+            <br>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
-            <div class="text-center">
-                <a href="dashboard.html"><button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button></a>
-            </div>
-        </form>
-    </section>
-</main>
-            <a href="#" class="theme-toggle">
+
+            <a href="home.html">
+                <button id="btnSign" type="button" class="btn btn-primary col-md-6">Sign In</button>
             </a>
-            <footer>
-            </footer>
-        </div>
+
+        </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
