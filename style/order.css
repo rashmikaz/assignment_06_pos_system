@@ -13,19 +13,19 @@ nav{
     border-radius: 10px;
     background: whitesmoke;
     position: absolute;
-    top: 190px;
+    top: 490px;
     left: 180px;
     margin: auto;
     padding: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
 }
 #ItemForm{
     width: 600px;
     height: 260px;
     border-radius: 10px;
-    background: whitesmoke;
+
     position: absolute;
-    top: 190px;
+    top: 490px;
     right: 50px;
     margin: auto;
     padding: 5px;

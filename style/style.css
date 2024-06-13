@@ -1,29 +1,43 @@
 body{
     position: relative;
-    background: lightgrey;
+    background: white;
 }
 /*header*/
+
+/*header{*/
+/*    background-color: #222F3E;*/
+/*    height: 130px;*/
+/*}*/
+
+.container-fluid{
+    background-color: #222F3E;
+    height: 130px;
+
+    position: relative;
+    top: -20px;
+}
+
+
 header>nav{
-    border-radius: 40px 40px 40px 40px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /*border-radius: 40px 40px 40px 40px;*/
+    /*box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;*/
+
 }
-header>nav>div>a>img{
-    border-radius: 50%;
-}
+
 
 /*login*/
 #login-sec{
     position: relative;
-    background:linear-gradient(rgba(0,0,0,0.6),#ffffff,#4869fa);
+    /*background:linear-gradient(rgba(0,0,0,0.6),#ffffff,#4869fa);*/
     height: 100vh;
 }
 #login-sec>#log-form{
     width: 500px;
     height: 350px;
-    background: lightgray;
+    background: white;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;*/
 
     position: absolute;
     top: 130px;
@@ -51,53 +65,53 @@ header>nav>div>a>img{
 
 /*-home-*/
 
-#home-sec>#sidebtn{
-    height: fit-content;
-    position: absolute;
-}
-.BtnManage{
-    width: 350px;
-    height: 60px;
-    background-color: darkblue;
-    border: 2px solid cornflowerblue;
-    color: white;
-    margin-bottom: 20px;
-    border-radius: 0 50px 50px 0;
-    position: relative;
-    margin-left: -120px;
-}
-.BtnManage>h3{
-    position: absolute;
-    left: 160px;
-    /*right: 30px;*/
-    top: 10px;
+/*#home-sec>#sidebtn{*/
+/*    height: fit-content;*/
+/*    position: absolute;*/
+/*}*/
+/*.BtnManage{*/
+/*    width: 350px;*/
+/*    height: 60px;*/
+/*    background-color: darkblue;*/
+/*    border: 2px solid cornflowerblue;*/
+/*    color: white;*/
+/*    margin-bottom: 20px;*/
+/*    border-radius: 0 50px 50px 0;*/
+/*    position: relative;*/
+/*    margin-left: -120px;*/
+/*}*/
+/*.BtnManage>h3{*/
+/*    position: absolute;*/
+/*    left: 160px;*/
+/*    !*right: 30px;*!*/
+/*    top: 10px;*/
 
-}
-#sidebtn>a>#div1{
-    opacity: 1;
-}
-#sidebtn>a>#div2{
-    opacity: 75%;
-}
-#sidebtn>a>#div3{
-    opacity: 50%;
-}
-.BtnManage>h4{
-    position: absolute;
-    left: 32px;
-    /*right: 30px;*/
-    top: 12px;
+/*}*/
+/*#sidebtn>a>#div1{*/
+/*    opacity: 1;*/
+/*}*/
+/*#sidebtn>a>#div2{*/
+/*    opacity: 75%;*/
+/*}*/
+/*#sidebtn>a>#div3{*/
+/*    opacity: 50%;*/
+/*}*/
+/*.BtnManage>h4{*/
+/*    position: absolute;*/
+/*    left: 32px;*/
+/*    !*right: 30px;*!*/
+/*    top: 12px;*/
 
-}
-.BtnManage:hover{
-    width: 400px;
-    transition-duration: 3s;
-    margin-left: 0;
-    background-color: blueviolet;
-    color: lightgrey;
-    opacity: 1;
+/*}*/
+/*.BtnManage:hover{*/
+/*    width: 400px;*/
+/*    transition-duration: 3s;*/
+/*    margin-left: 0;*/
+/*    background-color: blueviolet;*/
+/*    color: lightgrey;*/
+/*    opacity: 1;*/
 
-}
+/*}*/
 #home-sec>h2{
     text-decoration-style: dashed;
     position: absolute;
@@ -119,13 +133,15 @@ header>nav>div>a>img{
 }
 
 /*-customer-*/
+
+
 #customerSearch{
     width: 800px;
     height: 300px;
     border-radius: 10px;
     background: whitesmoke;
     position: absolute;
-    top: 100px;
+    top: 200px;
     left: 0;
     right: 0;
     margin: auto;
@@ -134,14 +150,14 @@ header>nav>div>a>img{
 }
 #newCust{
     position: absolute;
-    top: 100px;
+    top: 200px;
     right: 130px;
     margin: auto;
 }
 #custTable{
     width: 1000px;
     position: absolute;
-    top: 420px;
+    top: 520px;
     left: 0;
     right: 0;
     margin: auto;
@@ -159,7 +175,7 @@ header>nav>div>a>img{
     border-radius: 10px;
     background: whitesmoke;
     position: absolute;
-    top: 100px;
+    top: 200px;
     left: 0;
     right: 0;
     margin: auto;
@@ -168,14 +184,14 @@ header>nav>div>a>img{
 }
 #newItem{
     position: absolute;
-    top: 100px;
+    top: 200px;
     right: 130px;
     margin: auto;
 }
 #itemTable{
     width: 1000px;
     position: absolute;
-    top: 420px;
+    top: 520px;
     left: 0;
     right: 0;
     margin: auto;
@@ -193,7 +209,7 @@ header>nav>div>a>img{
     border-radius: 10px;
     background: whitesmoke;
     position: absolute;
-    top: 86px;
+    top: 186px;
     left: 160px;
     margin: auto;
     padding: 5px;
@@ -205,7 +221,7 @@ header>nav>div>a>img{
     border-radius: 10px;
     background: whitesmoke;
     position: absolute;
-    top: 86px;
+    top: 186px;
     right: 50px;
     margin: auto;
     padding: 5px;
@@ -216,7 +232,7 @@ header>nav>div>a>img{
     width: 450px;
     height: 300px;
     position: absolute;
-    top: 314px;
+    top: 454px;
     right: 50px;
     margin: auto;
     padding: 5px;
@@ -225,7 +241,7 @@ header>nav>div>a>img{
 #itemCart{
     width: 650px;
     position: absolute;
-    top: 370px;
+    top: 470px;
     left: 160px;
 
     margin: auto;

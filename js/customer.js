@@ -1,5 +1,8 @@
+/*var customers=[];*/
+import CustomerModel from "../model/CustomerModel.js";
+import {customers} from "../db/db.js"
 
-var customers=[];
+var recordIndex;
 function loadTable(){
     $("#custTableBody").empty();
 
@@ -7,10 +10,10 @@ function loadTable(){
 
     customers.map((item,index)=>{
         var record = `<tr>
-            <td class="newcustomer-id-value">${item.custid}</td>
-            <td class="newcutomer-name-value">${item.custname}</td>
-            <td class="newcustomer-address-value">${item.custaddress}</td>
-            <td class="newcustomer-contact-value">${item.custcontact}</td>
+            <td class="customer-id-value">${item.custid}</td>
+            <td class="customer-name-value">${item.custname}</td>
+            <td class="customer-address-value">${item.custaddress}</td>
+            <td class="customer-contact-value">${item.custcontact}</td>
         </tr>`
         $("#custTableBody").append(record);
     })
@@ -26,32 +29,70 @@ $("#btn-saveCustomer").on('click', () => {
 
     var custcontact = $("#nCust-Contact").val();
 
-    /*console.log("cust-ID: ", custid);
-    console.log("cust-Name: ", custname);
-    console.log("cust-Address: ", custaddress);
-    console.log("cust-contact: ", custcontact);*/
 
-    /*var record = `<tr>
-        <td class="newcustomer-id-value">${custid}</td>
-        <td class="newcutomer-name-value">${custname}</td>
-        <td class="newcustomer-address-value">${custaddress}</td>
-        <td class="newcustomer-contact-value">${custcontact}</td>
-    </tr>`*/
 
-    /*console.log(record);
-    $("#custTableBody").append(record);*/
-
-    let customer={
+    /*let customer={
         custid: custid,
         custname:custname,
         custaddress:custaddress,
         custcontact:custcontact
-    }
+    }*/
+
+    let customer=new CustomerModel(custid,custname,custaddress,custcontact);
 
 
     customers.push(customer);
     console.log("pass to array");
 
     loadTable();
+
+});
+$("#btnCustUpdate").on('click', () =>{
+    var custid = $("#custID").val();
+
+    var custname = $("#custName").val();
+
+    var custaddress = $("#custAddress").val();
+
+    var custcontact = $("#custContct").val();
+
+    console.log(custid);
+    console.log(custname);
+    console.log(custaddress);
+    console.log(custcontact);
+
+    customers[recordIndex] = new CustomerModel(custid,custname,custaddress,custcontact);
+
+    loadTable(customers);
+
+});
+
+$("#btnCustDelete").on('click', () => {
+    customers.splice(recordIndex,1);
+    loadTable();
+    console.log("delete cust");
+
+
+});
+
+
+
+$("#custTableBody").on('click','tr', function (){
+    let index = $(this).index();
+    recordIndex = index;
+
+    let id = $(this).find(".customer-id-value").text();
+    let name = $(this).find(".customer-name-value").text();
+    let address = $(this).find(".customer-address-value").text();
+    let contact = $(this).find(".customer-contact-value").text();
+
+    console.log("hello"+id+name+address+contact);
+
+
+    $("#custID").val(id);
+    $("#custName").val(name);
+    $("#custAddress").val(address);
+    $("#custContct").val(contact);
+
 
 });

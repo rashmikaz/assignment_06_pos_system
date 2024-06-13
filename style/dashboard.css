@@ -64,15 +64,35 @@ h2{
 
 
 }
-h1{
-    font-size: 250px;
+#home-sec>h1{
+    font-size: 70px;
     font-family: sans-serif;
-    color: gray;
+    color: black;
     position: absolute;
-    top: 300px;
-    left: 140px;
+    top: 450px;
+    left: 440px;
     margin: auto;
     opacity: 50%;
+}
+#home-sec>h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: black;
+    position: absolute;
+    top: 530px;
+    left: 440px;
+    margin: auto;
+    opacity: 50%;
+
+}
+
+#customerimg{
+    width: 350px;
+    height: 350px;
+
+    position: relative;
+    top: 300px;
+    left: 50px;
 }
 .card-body{
    height: 200px;
@@ -84,4 +104,8 @@ h1{
 }
 .col{
     background-color: aliceblue;
+}
+.row{
+    position: relative;
+    top: -350px;
 }
